@@ -1,0 +1,497 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+/*=============== CUSTOM FONTS ===============*/
+@font-face {
+    font-family: jfrockout;
+    src: url('../fonts/JFRocOut.ttf');
+}
+@font-face {
+    font-family: jfrocksol;
+    src: url('../fonts/JFRocSol.TTF');
+}
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 4rem;
+  /*========== Colors ==========*/
+  --hue: 45;
+    --sat: 98%;
+  --first-color: #ffd516;
+  --first-color-alt: #fa9d1a;
+  --gray-color: #eaebec;
+  --gray-color-light: #fdfdfd;
+  --gray-color-dark: #bebfc1;
+  --gray-color-darker: #555;
+  --black-color: #000;
+  --white-color: #fff;
+  --title-color: #333;
+  --text-color: #333;
+  --text-color-light: hsl(var(--hue), 4%, 65%);
+  --body-color: hsl(var(--hue), 0%, 100%);
+  --container-color: #FFF;
+  --scroll-bar-color: hsl(var(--hue), 4%, 85%);
+  --scroll-thumb-color: hsl(var(--hue), 4%, 75%);
+  /*========== Font and typography ==========*/
+  --body-font: 'Open Sans', sans-serif;
+  --title-font: 'Montserrat', sans-serif;
+  --jfrockout-font: 'jfrockout', sans-serif;
+  --jfrocksol-font: 'jfrocksol', sans-serif;
+  --biggest-font-size: 2.3rem;
+  --h2-font-size: 1.4rem;
+  --h3-font-size: 1.125rem;
+  --logo-font-size: 1.5rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+  /*========== Font weight ==========*/
+  --font-normal-bold: 400;
+  --font-bold: 700;
+  /*========== Margenes ==========*/
+  --mb-0-5: .5rem;
+  --mb-0-75: .75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-tooptip2: 11;
+  --z-fixed: 100;
+}
+
+@media screen and (min-width: 968px) {
+  :root {
+    --biggest-font-size: 4rem;
+    --logo-font-size: 2.5rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+/*=============== BASE ===============*/
+*, ::before, ::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: .5s;
+}
+
+main{
+  overflow: hidden;
+}
+
+h1, h2, h3 {
+  font-weight: var(--font-bold);
+  color: var(--title-color);
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color:var(--text-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== THEME ===============*/
+/*========== Variables Dark theme ==========*/
+body.dark-theme {
+    --hue: 45;
+    --sat: 98%;
+  --first-color-light: hsl(var(--hue), var(--sat), 75%);
+  --title-color: hsl(var(--hue), 4%, 95%);
+  --text-color: hsl(var(--hue), 4%, 80%);
+  --body-color: hsl(var(--hue), 8%, 13%);
+  --container-color: hsl(var(--hue), 8%, 16%);
+  --scroll-bar-color: hsl(var(--hue), 4%, 32%);
+  --scroll-thumb-color: hsl(var(--hue), 4%, 24%);
+}
+
+/*========== Button Dark/Light ==========*/
+.change-theme {
+  position: absolute;
+  right: 1.5rem;
+  top: 2.2rem;
+  color: var(--title-color);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.dark-theme .footer {
+  background-color: var(--container-color);
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.section {
+  padding: 4.5rem 0 1rem;
+}
+
+.section__title, .section__title-center {
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+  text-align: center;
+  margin-bottom: var(--mb-1);
+}
+
+
+
+section img:not('.home__img') {
+  width: 300px;
+  justify-self: center;
+}
+
+/*=============== LAYOUT ===============*/
+.container {
+  max-width: 968px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.centre{
+    justify-content: center;
+}
+
+/*=============== HEADER ===============*/
+.header {
+  width: 100%;
+  background-color: var(--first-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  transition: .5s;
+}
+
+
+/* Change background header */
+
+.header.scroll-header{
+  background-color: var(--first-color);
+  box-shadow: 0 1px 2px var(--first-color-alt);
+
+}
+
+
+/*=============== NAV ===============*/
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header.scroll-header .nav {
+  display:block;
+  height: var(--header-height);
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    background-color: var(--container-color);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem 0;
+    width: 90%;
+    top: -100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: .4s;
+    border-radius: 2rem;
+    z-index: var(--z-fixed);
+  }
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+}
+
+.nav__link, .nav__toggle {
+  color:var(--black-color);
+  font-weight: var(--font-bold);
+}
+.nav__link:hover:not(.active-link) {
+  bottom: -.25rem;
+  border-bottom: 2px solid var(--first-color);
+}
+
+.nav__logo{
+    font-family: var(--jfrockout-font);
+    font-size: var(--logo-font-size);
+    font-weight: var(--font-bold);
+    transition: .4s;
+    font-family:   var(--jfrocksol-font);
+    letter-spacing: 3px;
+}
+
+.header.scroll-header .nav__logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: var(--h2-font-size);
+  font-family:   var(--jfrockout-font);
+  
+}
+  
+  .nav__toggle {
+    font-size: 1.75rem;
+    cursor: pointer;
+  }
+  
+  .header.scroll-header .nav__toggle{
+    position: absolute;
+    right: var(--mb-1-5);
+    top: 50%;
+    transform: translateY(-50%);
+    }
+
+
+
+
+
+/* Show menu */
+.show-menu {
+  top: calc(1rem + var(--header-height));
+}
+
+/* Active link */
+.active-link {
+  position: relative;
+}
+
+.active-link::before {
+  content: '';
+  position: absolute;
+  bottom: -.25rem;
+  width: 100%;
+  height: 2px;
+  background-color: var(--first-color-alt);
+}
+
+
+
+
+
+
+/*=============== HOME ===============*/
+.home{
+  height: calc(100vh - var(--header-height));
+    background: var(--first-color);
+    padding: 4.5rem 0 0;
+  }
+  .home__container {
+    align-items: center;
+    height: 70%;
+    row-gap: 0;
+}
+
+.home__data{
+    text-align: center;
+    margin-top: -70%;
+}
+
+.home__title {
+  font-family: var(--jfrockout-font);
+  font-size: var(--biggest-font-size);
+  color:var(--black-color);
+  font-weight: var(--font-bold);
+}
+
+.home__subtitle{
+font-size: var(--h2-font-size);
+font-weight: var(--font-bold);
+margin-top: var(--mb-1);
+}
+
+.home__img {
+  width: 350px;
+  transform: rotateY(180deg);
+  position:absolute;
+  bottom:70%;
+  padding-inline: .75rem;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0,.4));
+}
+
+.orange-stripe{
+  position: relative;
+    background-color: var(--first-color-alt);
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button home-btn-down{
+    font-size: 2rem;
+}
+
+.home-btn-down .button__icon{
+    transition: transform .3s;
+}
+.home-btn-down:hover .button__icon{
+    transform: translateX(10px);
+}
+
+/*=============== BUTTONS ===============*/
+.button {
+  background-color: var(--gray-color-light);
+  text-align: center;
+  color: #1A1A1A;
+  padding: .5rem 1.5rem;
+  border-radius: 3rem;
+  font-weight: var(--font-bold);
+  transition: box-shadow .3s;
+  width:80%;
+}
+
+.button:hover {
+  box-shadow: 0 3px 10px var(--first-color-alt);
+}
+
+.button__header {
+  display: none;
+}
+
+.button-link {
+  background: none;
+  padding: 0;
+  color: var(--title-color);
+}
+
+.button-link:hover {
+  background-color: transparent;
+}
+
+.button-flex {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+  padding: .5rem 1rem;
+}
+
+.button__icon {
+  font-size: 1.5rem;
+  padding:.1rem;
+
+}
+
+
+.home-btn-centre{
+    display:none;;
+}
+
+
+
+
+/*=============== SCROLL UP ===============*/
+.scrollup {
+  position: fixed;
+  background: var(--first-color);
+  right: 1rem;
+  bottom: -20%;
+  display: inline-flex;
+  padding: .3rem;
+  border-radius: .25rem;
+  z-index: var(--z-tooltip);
+  opacity: .8;
+  transition: .4s;
+}
+
+.scrollup:hover {
+  background-color: var(--first-color);
+  opacity: 1;
+}
+
+.scrollup__icon {
+  font-size: 1.25rem;
+  color: var(--title-color);
+}
+
+/* Show Scroll Up*/
+.show-scroll {
+  bottom: 3rem;
+}
+
+/*=============== MEDIA QUERIES ===============*/
+
+@media screen and (min-width: 767px) {
+    body {
+      margin: 0;
+    }
+    .section {
+      padding: 6rem 0 2rem;
+    }
+    .nav {
+      height: calc(var(--header-height) + 1.5rem);
+    }
+    .nav__list {
+      flex-direction: row;
+      column-gap: 2.5rem;
+    }
+    .nav__toggle {
+      display: none;
+    }
+    .change-theme {
+      position: initial;
+    }
+    .home__container {
+      padding: 6rem 0 2rem;
+    }
+    .app__buttons {
+      justify-content: initial;
+    }
+  }
+  
+
+  @media screen and (min-width: 1024px) {
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .home__img {
+      width: 540px;
+    }
+    .home__description {
+      padding-right: 5rem;
+    }
+    .footer__container {
+      column-gap: 3rem;
+    }
+    .scrollup {
+      right: 2rem;
+    }
+  }
