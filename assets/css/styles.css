@@ -344,15 +344,31 @@ section img:not('.home__img') {
   height: calc(100vh - var(--header-height));
     background: var(--first-color);
     padding: 4.5rem 0 0;
+    position: relative;
+  }
+
+  .home:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    opacity: 0.15;
+    background: url('../img/abc.png');
+    background-position:50% 65%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
   }
   .home__container {
     align-items: center;
     height: 70%;
     row-gap: 0;
-    background: url('../img/hero_image2.png');
-    background-position:bottom;
-    background-size: contain;
-    background-repeat: no-repeat;
+
+
+
 }
 
 .home__data{
