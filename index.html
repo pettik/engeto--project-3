@@ -1,235 +1,318 @@
 <!DOCTYPE html>
-    <html lang="cs">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon" />
+    <!--=============== BOXICONS ===============-->
     <link
-      rel="shortcut icon"
-      href="assets/img/icon.png"
-      type="image/x-icon"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
-        <!--=============== BOXICONS ===============-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-        <title>LUKESTONE | Kamenické a zemní práce</title>
-    </head>
-    <body>
-        <!--=============== HEADER ===============-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">Lukestone</a>
+    <title>LUKESTONE | Kamenické a zemní práce</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Lukestone</a>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Domů</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">Co děláme</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#services" class="nav__link">Nabídka služeb</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#gallery" class="nav__link">Galerie</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">Kontakt</a>
-                        </li>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Domů</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">Co děláme</a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">Nabídka služeb</a>
+            </li>
+            <li class="nav__item">
+              <a href="#gallery" class="nav__link">Galerie</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Kontakt</a>
+            </li>
 
-                        <i class='bx bx-toggle-left change-theme' id="theme-button"></i>
-                    </ul>
-                </div>
+            <i class="bx bx-toggle-left change-theme" id="theme-button"></i>
+          </ul>
+        </div>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
 
-            </nav>
-        </header>
+    <main class="main">
+      <!--=============== HOME ===============-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h1 class="home__title">LUKESTONE</h1>
+            <p class="home__subtitle">Kamenické a zemní práce</p>
+            <a href="#" class="button home-btn-centre">Get Started</a>
+          </div>
+        </div>
 
-        <main class="main">
-            <!--=============== HOME ===============-->
-            <section class="home section" id="home">
-                <div class="home__container container grid">
-                    <div class="home__data">
-                        <h1 class="home__title">LUKESTONE</h1>
-                        <p class="home__subtitle">Kamenické a zemní práce</p>
-                        <a href="#" class="button home-btn-centre">Get Started</a>
-                    </div>   
+        <div class="orange-stripe">
+          <img
+            src="assets/img/hero_image.png"
+            alt="home img"
+            class="home__img"
+          />
+          <a href="#" class="button home-btn-down button-flex btn--white btn"
+            >Napsat zprávu <i class="bx bx-chevrons-right button__icon"></i
+          ></a>
+        </div>
+      </section>
 
-                </div>
-                
-                <div class="orange-stripe">
-                    <img src="assets/img/hero_image.png" alt="home img" class="home__img ">
-                    <a href="#" class="button home-btn-down button-flex btn--white btn">Napsat zprávu <i class='bx bx-chevrons-right button__icon'></i></a>
-                </div>
-            </section>
+      <!--=============== ABOUT ===============-->
+      <section class="about section container" id="about">
+        <div class="about__container grid">
+          <div class="about__data">
+            <h2 class="section__title-center">Co děláme</h2>
 
-            <!--=============== ABOUT ===============-->
-            <section class="about section container" id="about">
-                <div class="about__container grid">
-                    <div class="about__data">
-                        <h2 class="section__title-center">Co děláme</h2>
-                        
-                        <p class="about__description">We are a company dedicated to the distribution of products by delivery 
-                            to your home or to the place where you are, with the best quality of delivery.
-                        </p>
-                    </div>
+            <p class="about__description">
+              Specializujeme se na zemní a kamenické práce, zahrnující pokládku,
+              opracování a úpravy přírodních kamenných materiálů pro různé
+              stavební projekty.
+            </p>
 
-                    <img src="assets/img/hero_image.png" alt="home img" class="about__img">
-                </div>
-            </section>
+            <h4>Naše činnosti zahrnují:</h4>
 
-            <!--=============== SECURITY ===============-->
-            <section class="security section container">
-                <div class="security__container grid">
-                    <div class="security__data">
-                        <h2 class="section__title-center">Your Safety Is <br> Important</h2>
-                        <p class="security__description">When your order reaches you, we have the health safety protocols, 
-                            so that you are protected from any disease. Watch the video of how the delivery is made.
-                        </p>
-                    </div>
+            <ul class="about__list">
+              <li>Pokládka žulových a mramorových kostek</li>
+              <li>Instalace obrub a výstavba opěrných zdí</li>
+              <li>Kontejnérová přeprava materiálů</li>
+              <li>Výkopové práce a terénní úpravy bagrem</li>
+              <li>Vrtání děr půdním vrtákem</li>
+              <li>Umělecké dláždění znaků a portrétů</li>
+              <li>Zemní práce</li>
+              <li>Dláždění dvorků</li>
+              <li>Oprava a zlacení písma na hrobech</li>
+            </ul>
+          </div>
 
-                    <img src="assets/img/hero_image.png" alt="home img" class="security__img">
-                </div>
-            </section>
+          <img
+            src="assets/img/hero_image.png"
+            alt="home img"
+            class="about__img"
+          />
+        </div>
+      </section>
 
-            <!--=============== SERVICES ===============-->
-            <section class="services section container" id="services">
-                <h2 class="section__title">Some Services We <br> Offer</h2>
-                <div class="services__container grid">
-                    <div class="services__data">
-                        <h3 class="services__subtitle">Payment Done</h3>
-                       
+      <!--=============== SECURITY ===============-->
+      <section class="security section container">
+        <div class="security__container grid">
+          <div class="security__data">
+            <h2 class="section__title-center">
+              Your Safety Is <br />
+              Important
+            </h2>
+            <p class="security__description">
+              When your order reaches you, we have the health safety protocols,
+              so that you are protected from any disease. Watch the video of how
+              the delivery is made.
+            </p>
+          </div>
 
-                        <img src="assets/img/hero_image.png" alt="home img" class="services__img">
-                        <p class="services__description">Pay with a Visa or PayPal card and without much ado.</p>
-                        <div>
-                            <a href="#" class="button button-link">Learn More</a>
-                        </div>
-                    </div>
+          <img
+            src="assets/img/hero_image.png"
+            alt="home img"
+            class="security__img"
+          />
+        </div>
+      </section>
 
-                    <div class="services__data">
-                        <h3 class="services__subtitle">Find Your Product</h3>
-                        <img src="assets/img/hero_image.png" alt="home img" class="services__img">
-                        <p class="services__description">We offer sale of products through the Internet.</p>
-                        <div>
-                            <a href="#" class="button button-link">Learn More</a>
-                        </div>
-                    </div>
+      <!--=============== SERVICES ===============-->
+      <section class="services section container" id="services">
+        <h2 class="section__title">
+          Some Services We <br />
+          Offer
+        </h2>
+        <div class="services__container grid">
+          <div class="services__data">
+            <h3 class="services__subtitle">Payment Done</h3>
 
-                    <div class="services__data">
-                        <h3 class="services__subtitle">Product Received</h3>
-                        <img src="assets/img/hero_image.png" alt="home img" class="services__img">
-                        <p class="services__description">In our app you can see the delay time of your order.</p>
-                        <div>
-                            <a href="#" class="button button-link">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--=============== APP ===============-->
-            <section class="app section container">
-                <div class="app__container grid">
-                    <div class="app__data">
-                        <h2 class="section__title-center">Watch Your Delivery <br> At Any Time</h2>
-                        <p class="app__description">With our app you can view the route of your order, from our local headquarters to the 
-                            place where you are. Look for the app now!</p>
-                        <div class="app__buttons">
-                            <a href="#" class="button button-flex">
-                                <i class='bx bxl-apple button__icon'></i> App Store
-                            </a>
-                            <a href="#" class="button button-flex">
-                                <i class='bx bxl-play-store button__icon' ></i> Google Play
-                            </a>
-                        </div>
-                    </div>
-
-                    <img src="assets/img/hero_image.png" alt="home img" class="services__img">
-                </div>
-            </section>
-
-            <!--=============== CONTACT US ===============-->
-            <section class="contact section container" id="contact">
-                <div class="contact__container grid">
-                    <div class="contact__content">
-                        <h2 class="section__title-center">Contact Us From <br> Here</h2>
-                        <p class="contact__description">You can contact us from here, you can write to us, 
-                            call us or visit our service center, we will gladly assist you.</p>
-                    </div>
-
-                    <ul class="contact__content grid">
-                        <li class="contact__address">Telephone: <span class="contact__information">999 - 888 - 777</span></li>
-                        <li class="contact__address">Email:  <span class="contact__information">delivery@email.com</span></li>
-                        <li class="contact__address">Location: <span class="contact__information">Lima - Peru</span></li>
-                    </ul>
-
-                    <div class="contact__content">
-                        <a href="#" class="button">Contact Us</a>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!--=============== FOOTER ===============-->
-        <footer class="footer section">
-            <div class="footer__container container grid">
-                <div class="footer__content">
-                    <a href="#" class="footer__logo">Delivery</a>
-                    <p class="footer__description">Order Products Faster <br> Easier</p>
-                </div>
-
-                <div class="footer__content">
-                    <h3 class="footer__title">Our Services</h3>
-                    <ul class="footer__links">
-                        <li><a href="#" class="footer__link">Pricing </a></li>
-                        <li><a href="#" class="footer__link">Discounts</a></li>
-                        <li><a href="#" class="footer__link">Report a bug</a></li>
-                        <li><a href="#" class="footer__link">Terms of Service</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__content">
-                    <h3 class="footer__title">Our Company</h3>
-                    <ul class="footer__links">
-                        <li><a href="#" class="footer__link">Blog</a></li>
-                        <li><a href="#" class="footer__link">Our mision</a></li>
-                        <li><a href="#" class="footer__link">Get in touch</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__content">
-                    <h3 class="footer__title">Community</h3>
-                    <ul class="footer__links">
-                        <li><a href="#" class="footer__link">Support</a></li>
-                        <li><a href="#" class="footer__link">Questions</a></li>
-                        <li><a href="#" class="footer__link">Customer help</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__social">
-                    <a href="#" class="footer__social-link"><i class='bx bxl-facebook-circle '></i></a>
-                    <a href="#" class="footer__social-link"><i class='bx bxl-twitter'></i></a>
-                    <a href="#" class="footer__social-link"><i class='bx bxl-instagram-alt'></i></a>
-                </div>
+            <img
+              src="assets/img/hero_image.png"
+              alt="home img"
+              class="services__img"
+            />
+            <p class="services__description">
+              Pay with a Visa or PayPal card and without much ado.
+            </p>
+            <div>
+              <a href="#" class="button button-link">Learn More</a>
             </div>
+          </div>
 
-            <p class="footer__copy">&#169; Bedimcode. All right reserved</p>
-        </footer>
+          <div class="services__data">
+            <h3 class="services__subtitle">Find Your Product</h3>
+            <img
+              src="assets/img/hero_image.png"
+              alt="home img"
+              class="services__img"
+            />
+            <p class="services__description">
+              We offer sale of products through the Internet.
+            </p>
+            <div>
+              <a href="#" class="button button-link">Learn More</a>
+            </div>
+          </div>
 
-        <!--=============== SCROLL UP ===============-->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class='bx bx-up-arrow-alt scrollup__icon'></i>
-        </a>
+          <div class="services__data">
+            <h3 class="services__subtitle">Product Received</h3>
+            <img
+              src="assets/img/hero_image.png"
+              alt="home img"
+              class="services__img"
+            />
+            <p class="services__description">
+              In our app you can see the delay time of your order.
+            </p>
+            <div>
+              <a href="#" class="button button-link">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+      <!--=============== APP ===============-->
+      <section class="app section container">
+        <div class="app__container grid">
+          <div class="app__data">
+            <h2 class="section__title-center">
+              Watch Your Delivery <br />
+              At Any Time
+            </h2>
+            <p class="app__description">
+              With our app you can view the route of your order, from our local
+              headquarters to the place where you are. Look for the app now!
+            </p>
+            <div class="app__buttons">
+              <a href="#" class="button button-flex">
+                <i class="bx bxl-apple button__icon"></i> App Store
+              </a>
+              <a href="#" class="button button-flex">
+                <i class="bx bxl-play-store button__icon"></i> Google Play
+              </a>
+            </div>
+          </div>
+
+          <img
+            src="assets/img/hero_image.png"
+            alt="home img"
+            class="services__img"
+          />
+        </div>
+      </section>
+
+      <!--=============== CONTACT US ===============-->
+      <section class="contact section container" id="contact">
+        <div class="contact__container grid">
+          <div class="contact__content">
+            <h2 class="section__title-center">
+              Contact Us From <br />
+              Here
+            </h2>
+            <p class="contact__description">
+              You can contact us from here, you can write to us, call us or
+              visit our service center, we will gladly assist you.
+            </p>
+          </div>
+
+          <ul class="contact__content grid">
+            <li class="contact__address">
+              Telephone:
+              <span class="contact__information">999 - 888 - 777</span>
+            </li>
+            <li class="contact__address">
+              Email:
+              <span class="contact__information">delivery@email.com</span>
+            </li>
+            <li class="contact__address">
+              Location: <span class="contact__information">Lima - Peru</span>
+            </li>
+          </ul>
+
+          <div class="contact__content">
+            <a href="#" class="button">Contact Us</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">Delivery</a>
+          <p class="footer__description">
+            Order Products Faster <br />
+            Easier
+          </p>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Our Services</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Pricing </a></li>
+            <li><a href="#" class="footer__link">Discounts</a></li>
+            <li><a href="#" class="footer__link">Report a bug</a></li>
+            <li><a href="#" class="footer__link">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Our Company</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Blog</a></li>
+            <li><a href="#" class="footer__link">Our mision</a></li>
+            <li><a href="#" class="footer__link">Get in touch</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Community</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Support</a></li>
+            <li><a href="#" class="footer__link">Questions</a></li>
+            <li><a href="#" class="footer__link">Customer help</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__social">
+          <a href="#" class="footer__social-link"
+            ><i class="bx bxl-facebook-circle"></i
+          ></a>
+          <a href="#" class="footer__social-link"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a href="#" class="footer__social-link"
+            ><i class="bx bxl-instagram-alt"></i
+          ></a>
+        </div>
+      </div>
+
+      <p class="footer__copy">&#169; Bedimcode. All right reserved</p>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
