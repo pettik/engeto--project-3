@@ -31,7 +31,10 @@
   --body-color: hsl(var(--hue), 0%, 100%);
   --container-color: #fff;
   --scroll-bar-color: hsl(var(--hue), 4%, 85%);
-  --scroll-thumb-color: hsl(var(--hue), 4%, 75%);
+  --scroll-thumb-color: var(--first-color);
+
+  --color-primary-darker: hsl(from var(--first-color) h s calc(l - 5%)); 
+  --color-primary-darkest: hsl(from var(--first-color) h s calc(l - 10%)); 
   /*========== Font and typography ==========*/
   --body-font: 'Montserrat', sans-serif;
   --title-font: 'Open Sans', sans-serif;
@@ -150,6 +153,12 @@ body.dark-theme {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
   padding: 4.5rem 0 1rem;
+}
+
+.section p:not(.home p){
+  line-height: 1.5;
+  text-align:justify;
+  word-spacing:-2px;
 }
 
 .section__title,
@@ -501,6 +510,15 @@ section img:not('.home__img') {
 .about .about__list li {
   margin-bottom: 0.5rem;
 }
+/*=============== INVISIBLE ===============*/
+.invisible{
+  display:none;
+}
+
+/*=============== GALLERY ===============*/
+.gallery{
+  background-color: var(--gray-color);;
+}
 
 /*=============== SCROLL UP ===============*/
 .scrollup {
@@ -529,6 +547,22 @@ section img:not('.home__img') {
 /* Show Scroll Up*/
 .show-scroll {
   bottom: 3rem;
+}
+
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+  width: .6rem;
+  border-radius: .5rem;
+  background-color: var(--scroll-bar-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-primary-darker);
 }
 
 /*=============== MEDIA QUERIES ===============*/
