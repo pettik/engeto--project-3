@@ -562,7 +562,7 @@ section img:not('.home__img') {
 
 .about__img2 {
   max-width: 65%;
-  bottom: 10%;
+  top: 10rem;
   right: 0;
 }
 /*=============== INVISIBLE ===============*/
