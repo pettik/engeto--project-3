@@ -523,6 +523,48 @@ section img:not('.home__img') {
   color: var(--first-color-alt);
   cursor: default;
 } */
+
+.about__imgs {
+  content: '';
+  width: 100%;
+  min-height: 25rem;
+  position: relative;
+  margin: 1rem 0;
+}
+
+.about__img {
+  max-width: 60%;
+  position: absolute;
+  border-radius: 0.15rem;
+  padding: 0.35rem;
+  border: 0.35rem solid var(--first-color);
+  /* background-color: var(--gray-color); */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s, box-shadow 0.3s, border-width 0.3s, padding 0.3s,
+    z-index 0.3s, border-color 0.3s;
+}
+
+.about__img:hover {
+  transform: scale(1.05);
+  border-width: 0.05rem;
+  padding: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-color: var(--first-color-alt);
+}
+.about__img1 {
+  top: 0;
+  left: 0;
+}
+
+.about__img1:hover {
+  z-index: 1;
+}
+
+.about__img2 {
+  max-width: 65%;
+  bottom: 10%;
+  right: 0;
+}
 /*=============== INVISIBLE ===============*/
 .invisible {
   display: none;
