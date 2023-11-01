@@ -46,6 +46,7 @@
   --normal-font-size: 0.938rem;
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
+  --logo-size: 1.7rem;
   /*========== Font weight ==========*/
   --font-normal-bold: 400;
   --font-bold: 700;
@@ -55,6 +56,8 @@
   --mb-1: 1rem;
   --mb-1-5: 1.5rem;
   --mb-2: 2rem;
+  --mb-3: 3rem;
+  --mb-4: 4rem;
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-tooptip2: 11;
@@ -99,7 +102,7 @@ main {
   overflow: hidden;
 }
 
-h1,
+
 h2,
 h3 {
   font-weight: var(--font-bold);
@@ -126,13 +129,16 @@ img {
 body.dark-theme {
   --hue: 45;
   --sat: 98%;
+  --first-color-midpoint: hsl(57, 100%, 40%);
+  --first-color-alt: #ffb516;
   --first-color-light: hsl(var(--hue), var(--sat), 75%);
-  --title-color: hsl(var(--hue), 4%, 95%);
-  --text-color: hsl(var(--hue), 4%, 80%);
+  --title-color: var(--first-color);
+  --text-color: hsl(var(--hue), 4%, 100%);
   --body-color: hsl(var(--hue), 8%, 13%);
   --container-color: hsl(var(--hue), 8%, 16%);
   --scroll-bar-color: hsl(var(--hue), 4%, 32%);
-  --scroll-thumb-color: hsl(var(--hue), 4%, 24%);
+  --scroll-thumb-color: #fdb918;
+  --gray-color:#333;
 }
 
 /*========== Button Dark/Light ==========*/
@@ -352,23 +358,31 @@ section img:not('.home__img') {
   row-gap: 1.5rem;
 }
 
+
 .nav__link,
 .nav__toggle {
-  color: var(--black-color);
   font-weight: var(--font-bold);
+}
+.nav__link{
+  color: var(--text-color);
 }
 .nav__link:hover:not(.active-link) {
   bottom: -0.25rem;
   border-bottom: 2px solid var(--first-color);
 }
 
+
 .nav__logo {
   font-family: var(--jfrockout-font);
   font-size: var(--logo-font-size);
   font-weight: var(--font-bold);
   transition: 0.4s;
-  font-family: var(--jfrocksol-font);
   letter-spacing: 3px;
+}
+
+body.dark-theme .nav__logo,
+body.dark-theme .nav__toggle{
+  color: var(--black-color);
 }
 
 .header.scroll-header .nav__logo {
@@ -376,7 +390,7 @@ section img:not('.home__img') {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-size: var(--h2-font-size);
+  font-size: var(--logo-size);
   font-family: var(--jfrockout-font);
 }
 
@@ -435,7 +449,10 @@ section img:not('.home__img') {
   background: var(--first-color);
   padding: 4.5rem 0 0;
   position: relative;
+  overflow: hidden;
 }
+
+
 
 .home:before {
   content: '';
@@ -445,7 +462,7 @@ section img:not('.home__img') {
   height: 100%;
   left: 0;
   bottom: -15%;
-  opacity: 0.15;
+  opacity: 0.08;
   /* background: url('../img/abc.png'); */
   background: url('../img/stone-image.webp');
   background-position: center;
@@ -461,12 +478,15 @@ section img:not('.home__img') {
 .home__data {
   text-align: center;
   margin-top: -70%;
+  color: var(--black-color);
 }
 
 .home__title {
+  display: inline-block;
+  width: 100%;
   font-family: var(--jfrockout-font);
   font-size: var(--biggest-font-size);
-  color: var(--black-color);
+  
   font-weight: var(--font-bold);
 }
 
@@ -495,6 +515,10 @@ section img:not('.home__img') {
 }
 
 /*=============== ABOUT ===============*/
+.about__container {
+  gap: 4rem;
+}
+
 
 .about__data > .about__description {
   margin-bottom: 2rem;
@@ -527,9 +551,9 @@ section img:not('.home__img') {
 .about__imgs {
   content: '';
   width: 100%;
-  min-height: 25rem;
+  height: 20rem;
   position: relative;
-  margin: 1rem 0;
+ 
 }
 
 .about__img {
@@ -562,7 +586,7 @@ section img:not('.home__img') {
 
 .about__img2 {
   max-width: 65%;
-  top: 10rem;
+  top: 30%;
   right: 0;
 }
 /*=============== INVISIBLE ===============*/
@@ -572,8 +596,59 @@ section img:not('.home__img') {
 
 /*=============== GALLERY ===============*/
 .gallery {
+  height: fit-content;
   background-color: var(--gray-color);
 }
+
+.gallery__description{
+  margin-bottom: var(--mb-4)
+}
+
+.gallery__container{
+  position: relative;
+  grid-template-columns: repeat(3,1fr);
+  gap: .35rem;
+  margin-bottom: var(--mb-2);
+}
+
+.gallery__data:not(.gallery__data:nth-child(2)){
+  padding-bottom: var(--mb-2);
+}
+
+.gallery__data{
+  display: grid;
+  row-gap: .35rem;
+  
+}
+
+.gallery__container .gallery__data:nth-child(2){
+  
+  margin-top:var(--mb-2)
+}
+
+.gallery__imgbox{
+  overflow: hidden;
+  border-radius: 1rem;
+  height: 15rem;
+}
+
+
+
+
+.gallery__img{
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform .3s;
+  
+}
+
+.gallery__img:hover{
+  transform: scale(1.1);
+}
+
+
 
 /*=============== SCROLL UP ===============*/
 .scrollup {
@@ -590,7 +665,7 @@ section img:not('.home__img') {
 }
 
 .scrollup:hover {
-  background-color: var(--first-color);
+  background-color: var(--first-color-alt);
   opacity: 1;
 }
 
@@ -603,6 +678,7 @@ section img:not('.home__img') {
 .show-scroll {
   bottom: 3rem;
 }
+
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {

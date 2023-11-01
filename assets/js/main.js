@@ -15,13 +15,17 @@ showMenu('nav-toggle','nav-menu')
 
 /*=============== REMOVE MENU MOBILE ===============*/
 const navLink = document.querySelectorAll('.nav__link')
+const navMenu = document.querySelector('.nav__menu');
 
 function linkAction(){
     const navMenu = document.getElementById('nav-menu')
     // When we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove('show-menu')
+
+    
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
@@ -47,7 +51,7 @@ window.addEventListener('scroll', scrollActive)
 function scrollHeader(){
     const nav = document.getElementById('header')
     // When the scroll is greater than 80 viewport height, add the scroll-header class to the header tag
-    if(this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
+    if(this.scrollY >= 210) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
 
@@ -88,3 +92,7 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+/*=============== touchTouch Lightbox gallery ===============*/
+touchTouch(document.querySelector('.gallery__container').querySelectorAll('.demo'), {showCaption:true});
