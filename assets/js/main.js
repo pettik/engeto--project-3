@@ -96,3 +96,5 @@ themeButton.addEventListener('click', () => {
 
 /*=============== touchTouch Lightbox gallery ===============*/
 touchTouch(document.querySelector('.gallery__container').querySelectorAll('.demo'), {showCaption:true});
+touchTouch(document.querySelector('.gallery__container').querySelectorAll('.demo1'), {showCaption:true});
+touchTouch(document.querySelector('.gallery__container').querySelectorAll('.demo2'), {showCaption:true});
