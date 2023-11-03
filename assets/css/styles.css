@@ -124,6 +124,10 @@ img {
   height: auto;
 }
 
+p{
+  line-height: 1.7;
+}
+
 /*=============== THEME ===============*/
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
@@ -160,8 +164,9 @@ body.dark-theme {
   padding: 4.5rem 0 1rem;
 }
 
-.section p:not(.home p) {
-  line-height: 1.5;
+.section p:not(.home p),
+.section p:not('.footer__copy') {
+ 
   text-align: justify;
   word-spacing: -2px;
 }
@@ -649,7 +654,94 @@ body.dark-theme .nav__toggle{
 }
 
 
+/*=============== CONTACT ===============*/
+.contact__container {
+  padding-bottom: 3rem;
+}
 
+.contact__description {
+  text-align: center;
+}
+
+.contact__content {
+  row-gap: .75rem;
+  
+}
+
+.contact__address {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-bold);
+  color: var(--title-color);
+}
+
+
+.contact__information {
+  font-weight: initial;
+  color: var(--text-color);
+
+}
+
+.contact__information-link{
+ color: var(--first-color-alt); 
+ transition: text-decoration .3s;
+}
+.contact__information-link:hover{
+  text-decoration: underline;
+}
+
+/*=============== FOOTER ===============*/
+.footer {
+  background-color: var(--first-color-alt);
+  padding-bottom: 2rem;
+ 
+}
+
+.footer__container {
+  row-gap: 2rem;
+}
+
+.footer__logo, .footer__title {
+  
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-75);
+}
+
+.footer__logo {
+  display: inline-block;
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+  font-family: var(--jfrocksol-font);
+}
+
+.footer__description, .footer__link {
+  font-size: var(--small-font-size);
+}
+
+.footer__links {
+  display: grid;
+  row-gap: .5rem;
+}
+
+.footer__link {
+  color: var(--title-color);
+}
+
+.footer__social {
+  display: flex;
+  column-gap: 1.5rem;
+}
+
+.footer__social-link {
+  font-size: 1.25rem;
+  color: var(--title-color);
+}
+
+.footer__copy {
+  margin-top: 6rem;
+  text-align: center;
+  font-size: var(--smaller-font-size);
+  color: var(--text-color);
+}
 /*=============== SCROLL UP ===============*/
 .scrollup {
   position: fixed;
@@ -660,7 +752,7 @@ body.dark-theme .nav__toggle{
   padding: 0.3rem;
   border-radius: 0.25rem;
   z-index: var(--z-tooltip);
-  opacity: 0.8;
+  opacity: 0.85;
   transition: 0.4s;
 }
 
@@ -672,6 +764,10 @@ body.dark-theme .nav__toggle{
 .scrollup__icon {
   font-size: 1.25rem;
   color: var(--title-color);
+}
+
+.dark-theme .scrollup__icon {
+  color: var(--container-color);
 }
 
 /* Show Scroll Up*/
