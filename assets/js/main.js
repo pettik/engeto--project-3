@@ -112,7 +112,9 @@ touchTouch(
   { showCaption: true }
 );
 touchTouch(
-  document.querySelector('.gallery__container').querySelectorAll('.demo1'),
+  document
+    .querySelector('.gallery__container')
+    .querySelectorAll('.bazen-kobyla'),
   { showCaption: true }
 );
 touchTouch(
