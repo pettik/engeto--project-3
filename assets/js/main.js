@@ -1,13 +1,20 @@
 /*=============== SHOW MENU ===============*/
 const showMenu = (toggleId, navId) => {
-  const toggle = document.getElementById(toggleId),
-    nav = document.getElementById(navId);
+  const toggle = document.getElementById(toggleId);
+  const nav = document.getElementById(navId);
 
   // Validate that variables exist
   if (toggle && nav) {
     toggle.addEventListener('click', () => {
       // We add the show-menu class to the div tag with the nav__menu class
       nav.classList.toggle('show-menu');
+    });
+
+    // Close the menu if the user clicks outside of it
+    document.addEventListener('click', (event) => {
+      if (!nav.contains(event.target) && !toggle.contains(event.target)) {
+        nav.classList.remove('show-menu');
+      }
     });
   }
 };
@@ -18,8 +25,6 @@ const navLink = document.querySelectorAll('.nav__link');
 const navMenu = document.querySelector('.nav__menu');
 
 function linkAction() {
-  const navMenu = document.getElementById('nav-menu');
-  // When we click on each nav__link, we remove the show-menu class
   navMenu.classList.remove('show-menu');
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
@@ -107,6 +112,13 @@ themeButton.addEventListener('click', () => {
 /*=============== touchTouch Lightbox gallery ===============*/
 touchTouch(
   document
+    .querySelector('.about__imgs')
+    .querySelectorAll('.about__img'),
+  { showCaption: true }
+);
+
+touchTouch(
+  document
     .querySelector('.gallery__container')
     .querySelectorAll('.opernazed-zulova'),
   { showCaption: true }
@@ -118,6 +130,91 @@ touchTouch(
   { showCaption: true }
 );
 touchTouch(
-  document.querySelector('.gallery__container').querySelectorAll('.demo2'),
+  document.querySelector('.gallery__container').querySelectorAll('.holesov-obklad'),
   { showCaption: true }
 );
+touchTouch(
+  document.querySelector('.gallery__container').querySelectorAll('.chodnik_zlotystok'),
+  { showCaption: true }
+);
+touchTouch(
+  document.querySelector('.gallery__container').querySelectorAll('.supikovice-prijezdova-cesta'),
+  { showCaption: true }
+);
+touchTouch(
+  document.querySelector('.gallery__container').querySelectorAll('.holesov-garaz'),
+  { showCaption: true }
+);
+touchTouch(
+  document.querySelector('.gallery__container').querySelectorAll('.prijezdovacesta_vapenna'),
+  { showCaption: true }
+);
+touchTouch(
+  document.querySelector('.gallery__container').querySelectorAll('.vlcatin-chodnik'),
+  { showCaption: true }
+);
+touchTouch(
+  document.querySelector('.gallery__container').querySelectorAll('.cernavoda-chodnik'),
+  { showCaption: true }
+);
+
+/*=============== touchTouch Lightbox FOOTER - GALLERY ===============*/
+
+touchTouch(
+  document
+    .querySelector('.footer__gallery')
+    .querySelectorAll('.opernazed-zulova2'),
+  { showCaption: true }
+);
+touchTouch(
+  document
+    .querySelector('.footer__gallery')
+    .querySelectorAll('.bazen-kobyla2'),
+  { showCaption: true }
+);
+touchTouch(
+  document
+    .querySelector('.footer__gallery')
+    .querySelectorAll('.holesov-obklad2'),
+  { showCaption: true }
+);
+touchTouch(
+  document
+    .querySelector('.footer__gallery')
+    .querySelectorAll('.chodnik_zlotystok2'),
+  { showCaption: true }
+);
+touchTouch(
+  document
+    .querySelector('.footer__gallery')
+    .querySelectorAll('.supikovice-prijezdova-cesta2'),
+  { showCaption: true }
+);
+touchTouch(
+  document
+    .querySelector('.footer__gallery')
+    .querySelectorAll('.holesov-garaz2'),
+  { showCaption: true }
+);
+touchTouch(
+  document
+    .querySelector('.footer__gallery')
+    .querySelectorAll('.prijezdovacesta_vapenna2'),
+  { showCaption: true }
+);
+touchTouch(
+  document
+    .querySelector('.footer__gallery')
+    .querySelectorAll('.vlcatin-chodnik2'),
+  { showCaption: true }
+);
+touchTouch(
+  document
+    .querySelector('.footer__gallery')
+    .querySelectorAll('.cernavoda-chodnik2'),
+  { showCaption: true }
+);
+
+
+
+
