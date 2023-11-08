@@ -219,7 +219,7 @@ touchTouch(
 /*=============== GSAP ANIMATION ===============*/
 
 gsap.from('.home__title', 1, {opacity: 0, y: -200, delay: .3, ease: 'bounce.out'});
-gsap.from('.home__subtitle', 2, {opacity: 0, x: -300, delay: .9,ease: 'elastic.out(1, .3)'})
+gsap.from('.home__subtitle,.home-btn-up', 2, {opacity: 0, x: -300, delay: .9,ease: 'elastic.out(1, .3)'});
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
@@ -232,9 +232,10 @@ const sr = ScrollReveal({
   // reset: true
 })
 
-sr.reveal(`.about__data, .security__data,.gallery_section, .gallery__data, .preprava__data .section__title-center, .footer__container`);
-sr.reveal(`.home__img, .preprava__description`,{delay:600, distance: '100px',interval: 100});
-sr.reveal(`.home-btn-down, .contact__content`,{origin: 'left'});
+sr.reveal(`.about__data, .security__data,.gallery_section, .gallery__data,  .footer__container`);
+sr.reveal(`.home__img, .preprava__description, .preprava-btn-up`,{origin: 'left',delay:600, distance: '100px',interval: 100});
+sr.reveal(`.home-btn-down, .contact__content li`,{origin: 'left', interval: 300});
+sr.reveal(`.preprava__data .section__title-center, .preprava__car__image`,{origin: 'right', interval: 500});
 sr.reveal(`.about__list li, .footer__links li`,{interval: 200});
 sr.reveal(`.about__imgs a`,{delay:600, distance: '200px', interval: 300});
 sr.reveal(`.gallery__imgbox`,{delay:100, distance: '100px', interval: 50});
