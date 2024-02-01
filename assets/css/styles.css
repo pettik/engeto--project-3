@@ -469,6 +469,53 @@ body.dark-theme .nav__toggle {
   align-items: center;
 }
 /*=============== ABOUT ===============*/
+
+.about {
+  position: relative;
+}
+
+/*========== ENGETO form ==========*/
+.engeto__form {
+  position: absolute;
+  bottom: 1rem;
+  right: -1.5rem;
+  display: flex;
+  z-index: var(--z-tooltip);
+}
+
+.engeto__logo__image {
+  height: 2rem;
+  align-self: flex-end;
+  margin: 0.25rem -1rem 0;
+  background-color: var(--white-color);
+  border-radius: 1rem;
+  padding: 0.2rem 1.5rem;
+  border: 2px solid red;
+  cursor: pointer;
+}
+
+.engeto__logo__image img {
+  max-height: 100%;
+}
+
+.engeto__form__wrapper {
+  width: 70vw;
+  max-width: 350px;
+  border: 2px solid red;
+}
+
+#form-engeto {
+  background: var(--white-color);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#form-engeto input {
+  margin-bottom: 1rem;
+}
+
+/*========== End of ENGETO form ==========*/
 .about__container {
   gap: 4rem;
 }
@@ -930,7 +977,6 @@ body.dark-theme .nav__toggle {
   }
   .home__container,
   .about__data,
-  .security__data,
   .app__data,
   .contact__description {
     text-align: initial;
