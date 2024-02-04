@@ -1155,6 +1155,9 @@ body.dark-theme .nav__toggle {
   .home__img {
     padding-inline: 0;
   }
+  .hideToRight {
+    right: -85%;
+  }
 }
 
 /* ***************************************************************************** */
@@ -1184,6 +1187,10 @@ body.dark-theme .nav__toggle {
   .contact__content .section__title-center,
   .contact__description {
     text-align: left;
+  }
+
+  .hideToRight {
+    right: -70%;
   }
 }
 
@@ -1294,6 +1301,10 @@ body.dark-theme .nav__toggle {
   .preprava__description {
     text-align: center;
   }
+
+  .hideToRight {
+    right: -25rem;
+  }
 }
 
 @media screen and (min-width: 930px) {
@@ -1362,6 +1373,10 @@ body.dark-theme .nav__toggle {
   .dark-theme .footer__copy {
     transition: color 0.3s;
     color: var(--gray-color-dark);
+  }
+
+  .hideToRight {
+    right: -28rem;
   }
 }
 
@@ -1508,5 +1523,12 @@ body.dark-theme .nav__toggle {
 
   .scrollup {
     right: 2rem;
+  }
+
+  .hideToRight {
+    right: -95%;
+  }
+  .showed {
+    right: -23.5rem;
   }
 }
