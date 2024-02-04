@@ -11,7 +11,7 @@ const showMenu = (toggleId, navId) => {
     });
 
     // Close the menu if the user clicks outside of it
-    document.addEventListener('click', (event) => {
+    document.addEventListener('click', event => {
       if (!nav.contains(event.target) && !toggle.contains(event.target)) {
         nav.classList.remove('show-menu');
       }
@@ -62,6 +62,53 @@ function scrollHeader() {
 }
 window.addEventListener('scroll', scrollHeader);
 
+/*=============== ENGETO FORM PASSWORD CHECK ===============*/
+const engetoForm = document.querySelector('.engeto__form');
+const logoEngeto = document.querySelector('.engeto__logo__image');
+logoEngeto.addEventListener('click', () => {
+  engetoForm.classList.toggle('hideToRight');
+  engetoForm.classList.toggle('showed');
+});
+
+const pass1 = document.querySelector('#engeto__password1');
+const pass2 = document.querySelector('#engeto__password2');
+const passBtn = document.querySelector('#form-engeto button');
+const passMessage = document.querySelector('.password-message');
+
+function passwordPrepare(password) {
+  return password.trim();
+}
+
+function resetpassMessage() {
+  passMessage.classList.remove('wrong');
+  passMessage.classList.remove('correct');
+  passMessage.classList.add('invisible');
+  passMessage.innerHTML = '';
+}
+
+passBtn.addEventListener('click', e => {
+  e.preventDefault();
+  resetpassMessage();
+  if (
+    passwordPrepare(pass1.value) === '' ||
+    passwordPrepare(pass2.value) === ''
+  ) {
+    passMessage.classList.add('wrong');
+    passMessage.classList.remove('hidden');
+    passMessage.textContent = `Vyplňte obě hesla`;
+  } else {
+    passMessage.classList.remove('hidden');
+    if (passwordPrepare(pass1.value) === passwordPrepare(pass2.value)) {
+      passMessage.classList.add('correct');
+      passMessage.innerHTML = `<i class='bx bx-check-circle' ></i> Hesla se shodují`;
+    }
+    if (passwordPrepare(pass1.value) !== passwordPrepare(pass2.value)) {
+      passMessage.classList.add('wrong');
+      passMessage.innerHTML = `<i class='bx bxs-error'></i> Hesla se neshodují`;
+    }
+  }
+});
+
 /*=============== SHOW SCROLL UP ===============*/
 function scrollUp() {
   const scrollUp = document.getElementById('scroll-up');
@@ -111,9 +158,7 @@ themeButton.addEventListener('click', () => {
 
 /*=============== touchTouch Lightbox gallery ===============*/
 touchTouch(
-  document
-    .querySelector('.about__imgs')
-    .querySelectorAll('.about__img'),
+  document.querySelector('.about__imgs').querySelectorAll('.about__img'),
   { showCaption: true }
 );
 
@@ -130,31 +175,45 @@ touchTouch(
   { showCaption: true }
 );
 touchTouch(
-  document.querySelector('.gallery__container').querySelectorAll('.holesov-obklad'),
+  document
+    .querySelector('.gallery__container')
+    .querySelectorAll('.holesov-obklad'),
   { showCaption: true }
 );
 touchTouch(
-  document.querySelector('.gallery__container').querySelectorAll('.chodnik_zlotystok'),
+  document
+    .querySelector('.gallery__container')
+    .querySelectorAll('.chodnik_zlotystok'),
   { showCaption: true }
 );
 touchTouch(
-  document.querySelector('.gallery__container').querySelectorAll('.supikovice-prijezdova-cesta'),
+  document
+    .querySelector('.gallery__container')
+    .querySelectorAll('.supikovice-prijezdova-cesta'),
   { showCaption: true }
 );
 touchTouch(
-  document.querySelector('.gallery__container').querySelectorAll('.holesov-garaz'),
+  document
+    .querySelector('.gallery__container')
+    .querySelectorAll('.holesov-garaz'),
   { showCaption: true }
 );
 touchTouch(
-  document.querySelector('.gallery__container').querySelectorAll('.prijezdovacesta_vapenna'),
+  document
+    .querySelector('.gallery__container')
+    .querySelectorAll('.prijezdovacesta_vapenna'),
   { showCaption: true }
 );
 touchTouch(
-  document.querySelector('.gallery__container').querySelectorAll('.vlcatin-chodnik'),
+  document
+    .querySelector('.gallery__container')
+    .querySelectorAll('.vlcatin-chodnik'),
   { showCaption: true }
 );
 touchTouch(
-  document.querySelector('.gallery__container').querySelectorAll('.cernavoda-chodnik'),
+  document
+    .querySelector('.gallery__container')
+    .querySelectorAll('.cernavoda-chodnik'),
   { showCaption: true }
 );
 
@@ -167,9 +226,7 @@ touchTouch(
   { showCaption: true }
 );
 touchTouch(
-  document
-    .querySelector('.footer__gallery')
-    .querySelectorAll('.bazen-kobyla2'),
+  document.querySelector('.footer__gallery').querySelectorAll('.bazen-kobyla2'),
   { showCaption: true }
 );
 touchTouch(
@@ -215,12 +272,20 @@ touchTouch(
   { showCaption: true }
 );
 
-
 /*=============== GSAP ANIMATION ===============*/
 
-gsap.from('.home__title', 1, {opacity: 0, y: -200, delay: .3, ease: 'bounce.out'});
-gsap.from('.home__subtitle,.home-btn-up', 2, {opacity: 0, x: -300, delay: .9,ease: 'elastic.out(1, .3)'});
-
+gsap.from('.home__title', 1, {
+  opacity: 0,
+  y: -200,
+  delay: 0.3,
+  ease: 'bounce.out',
+});
+gsap.from('.home__subtitle,.home-btn-up', 2, {
+  opacity: 0,
+  x: -300,
+  delay: 0.9,
+  ease: 'elastic.out(1, .3)',
+});
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 
@@ -230,12 +295,25 @@ const sr = ScrollReveal({
   duration: 3000,
   delay: 400,
   // reset: true
-})
+});
 
-sr.reveal(`.about__data, .security__data,.gallery_section, .gallery__data,  .footer__container`);
-sr.reveal(`.home__img, .preprava__description, .preprava-btn-up`,{origin: 'left',delay:600, distance: '100px',interval: 100});
-sr.reveal(`.home-btn-down, .contact__content li`,{origin: 'left', interval: 300});
-sr.reveal(`.preprava__data .section__title-center, .preprava__car__image`,{origin: 'right', interval: 500});
-sr.reveal(`.about__list li, .footer__links li`,{interval: 200});
-sr.reveal(`.about__imgs a`,{delay:600, distance: '200px', interval: 300});
-sr.reveal(`.gallery__imgbox`,{delay:100, distance: '100px', interval: 50});
+sr.reveal(
+  `.about__data, .security__data,.gallery_section, .gallery__data,  .footer__container`
+);
+sr.reveal(`.home__img, .preprava__description, .preprava-btn-up`, {
+  origin: 'left',
+  delay: 600,
+  distance: '100px',
+  interval: 100,
+});
+sr.reveal(`.home-btn-down, .contact__content li`, {
+  origin: 'left',
+  interval: 300,
+});
+sr.reveal(`.preprava__data .section__title-center, .preprava__car__image`, {
+  origin: 'right',
+  interval: 500,
+});
+sr.reveal(`.about__list li, .footer__links li`, { interval: 200 });
+sr.reveal(`.about__imgs a`, { delay: 600, distance: '200px', interval: 300 });
+sr.reveal(`.gallery__imgbox`, { delay: 100, distance: '100px', interval: 50 });
