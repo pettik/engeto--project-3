@@ -65,9 +65,20 @@ window.addEventListener('scroll', scrollHeader);
 /*=============== ENGETO FORM PASSWORD CHECK ===============*/
 const engetoForm = document.querySelector('.engeto__form');
 const logoEngeto = document.querySelector('.engeto__logo__image');
-logoEngeto.addEventListener('click', () => {
+const exitBtn = document.querySelector('#exit-btn');
+
+function hideFormToStart() {
   engetoForm.classList.toggle('hideToRight');
   engetoForm.classList.toggle('showed');
+}
+
+logoEngeto.addEventListener('click', () => {
+  hideFormToStart();
+});
+
+exitBtn.addEventListener('click', e => {
+  e.preventDefault();
+  hideFormToStart();
 });
 
 const pass1 = document.querySelector('#engeto__password1');

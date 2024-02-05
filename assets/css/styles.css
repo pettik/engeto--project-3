@@ -278,6 +278,9 @@ section img:not('.home__img') {
 .dark-theme .button:hover:not(.home-btn-up) {
   box-shadow: 0 3px 10px var(--first-color);
 }
+.dark-theme .home-btn-up:hover {
+  box-shadow: 0 3px 10px var(--first-color-alt);
+}
 
 .button__header {
   display: none;
@@ -572,6 +575,30 @@ body.dark-theme .nav__toggle {
   100% {
     transform: translateX(0);
   }
+}
+
+.exitForm {
+  background: var(--first-color);
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  border-radius: 50%;
+  display: flex;
+  padding: 0.2rem;
+  transition: background 0.3s;
+}
+
+.exitForm__icon {
+  font-size: 1.25rem;
+  transition: transform 0.3s;
+}
+
+.exitForm:hover {
+  background: var(--first-color-midpoint);
+}
+
+.exitForm__icon:hover {
+  transform: scale(1.1);
 }
 
 .engeto__logo__image {
@@ -1002,6 +1029,7 @@ body.dark-theme .nav__toggle {
   z-index: var(--z-tooltip);
   opacity: 0.85;
   transition: 0.4s;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
 .scrollup:hover {
@@ -1526,9 +1554,18 @@ body.dark-theme .nav__toggle {
   }
 
   .hideToRight {
-    right: -95%;
+    right: -60%;
   }
   .showed {
-    right: -23.5rem;
+    right: -10rem;
+  }
+
+  .scrollup__icon {
+    font-size: 1.5rem;
+    color: var(--title-color);
+  }
+
+  .scrollup {
+    padding: 0.5rem;
   }
 }
