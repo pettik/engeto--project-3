@@ -32,8 +32,8 @@ Tento projekt má otestovat skutečnou programátorskou práci, kdy člověk mus
 7) ve formuláři se bude 2x zadávat heslo a formulář bude kontrolovat shodu hesel ✅
 8) po odscrollování směrem dolů se v pravém dolním rohu objeví ikonka zpět nahoru ✅
 9) je na tobě, jestli chceš javascriptový kód zapsat procedurálně nebo objektově ✅
-10) web by měl být responzivní
-11) snaž se, aby web graficky dobře vypadal (i když hodnocení vzhledu je vždy individuální)
+10) web by měl být responzivní ✅
+11) snaž se, aby web graficky dobře vypadal (i když hodnocení vzhledu je vždy individuální) ✅
 
 ## Tipy
 Tady je pro tebe ještě pár tipů:
