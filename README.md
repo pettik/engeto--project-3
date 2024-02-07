@@ -1,6 +1,8 @@
 # EN - Engeto Front-End Academy - Project 3 - Comprehensive Web Pages
 
-This is the solution for **PROJECT #3** (HTML, CSS, JS) at [Engeto Academy](https://engeto.cz/webova-akademie/) by Engeto.cz.
+This is the solution for **PROJECT No. 3** (HTML, CSS, JS) at [Engeto Academy](https://engeto.cz/webova-akademie/) by **Engeto.cz**.<br>
+It involves the modernization of an [outdated website](https://lukestone.estranky.cz/) for the company **Lukestone**, which specializes in **stonemasonry and excavation work** in the **Jesenicka** region.
+
 
 ## Contents: 
 - ➡️ [Description](#description)
@@ -21,7 +23,7 @@ The task is to bring together all current knowledge. There’s also room for cre
 
 1) Single-page website ✅
 2) Switchable between dark mode and light mode ✅
-3) Contains a header, 2 sections, and a footer (⛔ does not include more sections)
+3) Contains a header, 2 sections, and a footer (⛔ does include more sections)
 4) Responsive menu in the header with at least 3 items ✅
 5) Content of the first section is up to you, but it should include 3 images side by side. These images should smoothly enlarge when hovered over and shrink when the mouse moves away (⛔ the website contains over 10 such images, but in different sections)
 6) Second section contains a form ✅
@@ -66,7 +68,7 @@ Here are a few more tips for you:
 
 ## LIVEweb
 
-- The URL of the live website is: [www.petrb-engeto-academy-3.netlify.app/](https://petrb-engeto-academy-3.netlify.app/)
+- The URL of the live website is: <h1>[www.petrb-engeto-academy-3.netlify.app/](https://petrb-engeto-academy-3.netlify.app/)</h1>
 
 ### Media Queries
 
@@ -86,7 +88,8 @@ Here are a few more tips for you:
 
 # CZ - Engeto Front-End Academy - Projekt 3 - Komplexní webové stránky
 
-Toto je řešení k **PROJEKTU č. 3** (HTML, CSS, JS) v  [Engeto Academy ](https://engeto.cz/webova-akademie/) od **Engeto.cz**
+Toto je řešení k **PROJEKTU č. 3** (HTML, CSS, JS) v  [Engeto Academy ](https://engeto.cz/webova-akademie/) od **Engeto.cz**.<br>
+Jde o modernizaci [zastaralého webu](https://lukestone.estranky.cz/) pro firmu **Lukestone**, která se zabývá **kamenickými a výkopovými pracemi** v regionu **Jesenicka**.
 
 ## Obsah
 
