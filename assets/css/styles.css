@@ -1515,7 +1515,7 @@ body.dark-theme .nav__toggle {
 		display: grid;
 		position: absolute;
 		bottom: -10%;
-		transform: translateX(90%);
+		transform: translateX(90%) !important;
 		max-width: 600px;
 		filter: drop-shadow(5px 5px 15px var(--black-color));
 	}
