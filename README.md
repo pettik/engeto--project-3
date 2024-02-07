@@ -48,7 +48,7 @@ Tady je pro tebe ještě pár tipů:
 
 ### Tento projekt obsahuje:
 🟢 "Mobile-first" přístup 📲 <br>
-🟢 "DARK/LIGHT" mód vzhledu 🌓 <br>
+🟢 přepínač "DARK/LIGHT" mód vzhledu 🌓 v menu <br>
 🟢 Flexbox/grid <br>
 🟢 [Google Fonts](https://fonts.google.com/) - '<i>Montserrat</i>', '<i>Open Sans</i>'<br>
 🟢 Vlastní nahrané fonty '<i>JFRocOut</i>' a '<i>JFRocSol</i>'<br>
