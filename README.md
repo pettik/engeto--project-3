@@ -1,5 +1,90 @@
-# CZ - Engeto Front-End Academy - Projekt 3 - Komplexní webové stránky
+# EN - Engeto Front-End Academy - Project 3 - Comprehensive Web Pages
 
+This is the solution for **PROJECT #3** (HTML, CSS, JS) at [Engeto Academy](https://engeto.cz/webova-akademie/) by Engeto.cz.
+
+## Contents: 
+- ➡️ [Description](#description)
+- ➡️ [Features](#features)
+- ➡️ [Screenshot](#screenshot)
+- ➡️ [LIVE web](#liveweb)
+- ➡️ [Media Queries](#media-queries)
+- ➡️ [Author](#author)
+
+
+## Description
+
+This project aims to test real programming work, where one must combine multiple languages together (HTML, CSS, JavaScript). It involves modifying existing code and using it in a specific situation. This often requires code adjustments—sometimes major, sometimes minor. The work must be well-organized, starting with planning and considering subsequent steps. New elements are implemented on the web pages, which were not covered in the course but were introduced for their creation (e.g., a back-to-top button).
+
+
+## Assignment 
+The task is to bring together all current knowledge. There’s also room for creativity. The goal is to create a web page that meets the following requirements:
+
+1) Single-page website ✅
+2) Switchable between dark mode and light mode ✅
+3) Contains a header, 2 sections, and a footer (⛔ does not include more sections)
+4) Responsive menu in the header with at least 3 items ✅
+5) Content of the first section is up to you, but it should include 3 images side by side. These images should smoothly enlarge when hovered over and shrink when the mouse moves away (⛔ the website contains over 10 such images, but in different sections)
+6) Second section contains a form ✅
+7) The form will prompt for password input twice, and it will verify password match ✅
+8) After scrolling down, a back-to-top icon will appear in the bottom-right corner ✅
+9) You can choose whether to write the JavaScript code procedurally or using an object-oriented approach ✅
+10) The web page should be responsive ✅
+11) Strive for a visually appealing design (though appearance ratings are always subjective) ✅
+
+### Tips
+
+Here are a few more tips for you:
+
+1) Leverage Existing Code: Use code snippets that were created during the course (e.g., responsive menus, email validation, etc.), but modify them as needed.
+2) Plan Ahead: Before diving into writing code, take a moment to plan. Grab a pen and paper (or use any program) and sketch out your web page. Consider the steps you’ll take.
+3) Dark Mode and Light Mode Switching: You can implement dark mode and light mode switching by clicking on a button, text, or even a circular div (just set its width, height, and border-radius to 50%). Be creative!
+4) Build Responsiveness First: Start by creating a responsive web page. Once that’s in place, add JavaScript functionality.
+5) Choose an Engaging Theme: Select a web theme that excites you and aligns with your interests.
+
+## Features
+
+### This project includes:
+
+🟢 **Mobile-first** approach 📲<br>
+🟢 Toggle switch for **DARK/LIGHT** mode in the menu 🌓<br>
+🟢 Flexbox/grid<br>
+🟢 [Google Fonts](https://fonts.google.com/) - '<i>Montserrat</i>', '<i>Open Sans</i>'<br>
+🟢 Custom uploaded fonts *JFRocOut* and *JFRocSol*<br>
+🟢 [Boxicons](https://boxicons.com/) - Open-source icon system<br>
+🟢 [ScrollReveal](https://scrollrevealjs.org/) - JS library for animations after page load<br>
+🟢 [GSAP](https://github.com/greensock/GSAP) - JS library for additional animations (named “Lukestone”)<br>
+🟢 [touchTouch](https://github.com/tutorialzine/touchTouch) - jQuery plugin for displaying photos on mobile and PC (swipe to view photos)<br>
+🟢 Sticky navigation menu (show/hide) - only for mobile devices 📲<br>
+🟢 The actual page contains numerous photos, but the user always opens only one image (the entry point) and navigates through the **album** to view other photos of a specific stonemasonry project.<br>
+🟢 In the footer, there are links to these **albums**.<br>
+🟢 In the **Contacts** section, users can start writing a message directly to the **Lukestone company** using **Messenger** and **Whatsapp** buttons.
+
+## Screenshot
+
+<img src="design/design-preview.png" alt="Engeto Projekt 3">
+
+
+## LIVEweb
+
+- The URL of the live website is: [www.petrb-engeto-academy-3.netlify.app/](https://petrb-engeto-academy-3.netlify.app/)
+
+### Media Queries
+
+- Small mobile: 0-360px
+- Mobile (default): 361-450px
+- Tablet: 451-576px, 577-767px
+- Notebook: 768px-930px
+- Large screen: 1024px and above
+
+## Author
+
+- Github - [Petr Bednarski](https://github.com/pettik)
+- Frontend Mentor - [@pettik](https://www.frontendmentor.io/profile/pettik)
+
+
+<hr>
+
+# CZ - Engeto Front-End Academy - Projekt 3 - Komplexní webové stránky
 
 Toto je řešení k **PROJEKTU č. 3** (HTML, CSS, JS) v  [Engeto Academy ](https://engeto.cz/webova-akademie/) od **Engeto.cz**
 
@@ -34,7 +119,7 @@ Tento projekt má otestovat skutečnou programátorskou práci, kdy člověk mus
 10) web by měl být responzivní ✅
 11) snaž se, aby web graficky dobře vypadal (i když hodnocení vzhledu je vždy individuální) ✅
 
-## Tipy
+### Tipy
 Tady je pro tebe ještě pár tipů:
 
 1) použij kódy, které byly v průběhu kurzu vytvořeny (např. responzivní menu, shodu emailů apod.) - jen je musíš upravit podle potřeby
