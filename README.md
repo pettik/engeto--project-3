@@ -63,7 +63,7 @@ Tady je pro tebe ještě pár tipů:
 
 ## Screenshot
 
-<img src="design/design-preview.jpg" alt="Engeto Projekt 3">
+<img src="design/design-preview.png" alt="Engeto Projekt 3">
 
 ## LIVE web
 
