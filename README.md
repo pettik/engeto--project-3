@@ -6,7 +6,6 @@ Toto je řešení k **PROJEKTU č. 3** (HTML, CSS, JS) v  [Engeto Academy ](http
 ## Obsah
 
 - ➡️ [Popis](#popis)
-- ➡️ [Zadání](#zadani)
 - ➡️ [Vlastnosti](#vlastnosti)
 - ➡️ [Screenshot](#screenshot)
 - ➡️ [Živý web](#live)
