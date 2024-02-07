@@ -44,7 +44,7 @@ Tady je pro tebe ještě pár tipů:
 4) nejdříve vytvoř responzivní web a poté přidej do stránky javascript
 5) zvol si téma webu, které tě bude bavit
 
-## Vlastnosti projektu
+## Vlastnosti mého řešení tohoto projektu
 
 🟢 "Mobile-first" přístup 📲 <br>
 🟢 Vlastní vlastnosti CSS<br>
@@ -56,6 +56,8 @@ Tady je pro tebe ještě pár tipů:
 🟢 [GSAP](https://github.com/greensock/GSAP) - JS knihovna pro další animace (názvu "Lukestone")<br>
 🟢 [touchTouch](https://github.com/tutorialzine/touchTouch) - jQuery plugin pro zobrazení fotografii pro mobily a PC (prohlížení do strany)<br>
 🟢 Sticky navigační menu (zobrazení/skrytí) - pouze pro mobilní zařízení 📲<br>
+🟢 Samotná stránka obsahuje spoustu fotografii, které zabírají místo - uživiatel ale vždy otvírá jeden obrázek (vstupní) a tím se proklikne do **albumu** ve kterém prohlíží do stran další fotografie daného alba (dané realizace kamenické zakázky)<br>
+🟢 V patičce stránky jsou linky do těchto **alb** <br>
 
 ## Screenshot
 
