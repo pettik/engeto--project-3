@@ -28,7 +28,7 @@ Tento projekt má otestovat skutečnou programátorskou práci, kdy člověk mus
 3) web obsahuje header, 2 sekce a footer *(* ⛔ *obsahuje více sekcí)*
 4) v headeru je responzivní menu minimálně se 3 položkami ✅
 5) obsah první sekce je na tobě, ale její součástí budou 3 obrázky vedle sebe, které se po najetí myši budou plynule zvětšovat a po odjetí myši zmenšovat *(* ⛔ *web obsahuje přes 10 takových obrázků, jen v jiných sekcích)*
-6) v druhé section bude umístěný formulář
+6) v druhé section bude umístěný formulář ✅
 7) ve formuláři se bude 2x zadávat heslo a formulář bude kontrolovat shodu hesel ✅
 8) po odscrollování směrem dolů se v pravém dolním rohu objeví ikonka zpět nahoru ✅
 9) je na tobě, jestli chceš javascriptový kód zapsat procedurálně nebo objektově ✅
@@ -53,6 +53,8 @@ Tady je pro tebe ještě pár tipů:
 🟢 Vlastní nahrané fonty '<i>JFRocOut</i>' a '<i>JFRocSol</i>'<br>
 🟢 [Boxicons](https://boxicons.com/) - Open-source systém ikon<br>
 🟢 [ScrollReveal](https://scrollrevealjs.org/) - JS knihovna pro animace po načtení stránky<br>
+🟢 [GSAP](https://github.com/greensock/GSAP) - JS knihovna pro další animace (názvu "Lukestone")<br>
+🟢 [touchTouch](https://github.com/tutorialzine/touchTouch) - jQuery plugin pro zobrazení fotografii pro mobily a PC (prohlížení do strany)<br>
 🟢 Sticky navigační menu (zobrazení/skrytí) - pouze pro mobilní zařízení 📲<br>
 
 ## Screenshot
