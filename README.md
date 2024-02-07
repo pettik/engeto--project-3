@@ -48,14 +48,14 @@ Tady je pro tebe ještě pár tipů:
 
 ### Tento projekt obsahuje:
 🟢 "Mobile-first" přístup 📲 <br>
-🟢 Vlastní vlastnosti CSS<br>
-🟢 Flexbox<br>
+🟢 "DARK/LIGHT" mód vzhledu 🌓 <br>
+🟢 Flexbox/grid <br>
 🟢 [Google Fonts](https://fonts.google.com/) - '<i>Montserrat</i>', '<i>Open Sans</i>'<br>
 🟢 Vlastní nahrané fonty '<i>JFRocOut</i>' a '<i>JFRocSol</i>'<br>
 🟢 [Boxicons](https://boxicons.com/) - Open-source systém ikon<br>
 🟢 [ScrollReveal](https://scrollrevealjs.org/) - JS knihovna pro animace po načtení stránky<br>
 🟢 [GSAP](https://github.com/greensock/GSAP) - JS knihovna pro další animace (názvu "Lukestone")<br>
-🟢 [touchTouch](https://github.com/tutorialzine/touchTouch) - jQuery plugin pro zobrazení fotografii pro mobily a PC (prohlížení do strany)<br>
+🟢 [touchTouch](https://github.com/tutorialzine/touchTouch) - jQuery plugin pro zobrazení fotografii pro mobily a PC (prohlížení fotografií pohybem do stran)<br>
 🟢 Sticky navigační menu (zobrazení/skrytí) - pouze pro mobilní zařízení 📲<br>
 🟢 Samotná stránka obsahuje spoustu fotografii, které zabírají místo - uživatel ale vždy otvírá jen jeden obrázek (vstupní) a tím se proklikne do **albumu** ve kterém prohlíží do stran další fotografie daného alba (dané realizace kamenické zakázky)<br>
 🟢 V patičce stránky jsou linky do těchto **alb** <br>
@@ -67,7 +67,7 @@ Tady je pro tebe ještě pár tipů:
 
 ## LIVEweb
 
-- URL živého webu: ➡️ [www. petrb-engeto-academy-3.netlify.app/](https://petrb-engeto-academy-3.netlify.app/) ⬅️
+- URL živého webu na odkaze: <h1>[www. petrb-engeto-academy-3.netlify.app/](https://petrb-engeto-academy-3.netlify.app/)</h1>
 
 ### Media-queries
 
