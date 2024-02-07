@@ -59,7 +59,7 @@ Tady je pro tebe ještě pár tipů:
 🟢 Sticky navigační menu (zobrazení/skrytí) - pouze pro mobilní zařízení 📲<br>
 🟢 Samotná stránka obsahuje spoustu fotografii, které zabírají místo - uživatel ale vždy otvírá jen jeden obrázek (vstupní) a tím se proklikne do **albumu** ve kterém prohlíží do stran další fotografie daného alba (dané realizace kamenické zakázky)<br>
 🟢 V patičce stránky jsou linky do těchto **alb** <br>
-🟢 Možnost v sekci **Kontakty** pomocí tlačítek **Messenger** a **Whatsapp** přímo na majitele společnosti **Lukestone** <br>
+🟢 Možnost v sekci **Kontakty** pomocí tlačítek **Messenger** a **Whatsapp** začít psát zprávu přímo na společnost **Lukestone** <br>
 
 ## Screenshot
 
