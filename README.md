@@ -8,7 +8,7 @@ Toto je řešení k **PROJEKTU č. 3** (HTML, CSS, JS) v  [Engeto Academy ](http
 - ➡️ [Popis](#popis)
 - ➡️ [Vlastnosti](#vlastnosti)
 - ➡️ [Screenshot](#screenshot)
-- ➡️ [Živý web](#live)
+- ➡️ [LIVE web](#liveweb)
 - ➡️ [Media Queries](#media-queries)
 - ➡️ [Autor](#autor)
 
@@ -65,7 +65,7 @@ Tady je pro tebe ještě pár tipů:
 
 <img src="design/design-preview.png" alt="Engeto Projekt 3">
 
-## LIVE web
+## LIVEweb
 
 - URL živého webu: ➡️ [www. petrb-engeto-academy-3.netlify.app/](https://petrb-engeto-academy-3.netlify.app/) ⬅️
 
