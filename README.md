@@ -79,5 +79,5 @@ Tady je pro tebe ještě pár tipů:
 
 ## Autor
 
-- Webová stránka - [Petr Bednarski](https://github.com/pettik)
+- Github - [Petr Bednarski](https://github.com/pettik)
 - Frontend Mentor - [@pettik](https://www.frontendmentor.io/profile/pettik)
