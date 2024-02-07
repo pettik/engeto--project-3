@@ -43,8 +43,10 @@ Tady je pro tebe ještě pár tipů:
 4) nejdříve vytvoř responzivní web a poté přidej do stránky javascript
 5) zvol si téma webu, které tě bude bavit
 
-## Vlastnosti  mého řešení tohoto projektu
 
+## Vlastnosti
+
+### Tento projekt obsahuje:
 🟢 "Mobile-first" přístup 📲 <br>
 🟢 Vlastní vlastnosti CSS<br>
 🟢 Flexbox<br>
