@@ -59,7 +59,8 @@ Here are a few more tips for you:
 🟢 Sticky navigation menu (show/hide) - only for mobile devices 📲<br>
 🟢 The actual page contains numerous photos, but the user always opens only one image (the entry point) and navigates through the **album** to view other photos of a specific stonemasonry project.<br>
 🟢 In the footer, there are links to these **albums**.<br>
-🟢 In the **Contacts** section, users can start writing a message directly to the **Lukestone company** using **Messenger** and **Whatsapp** buttons.
+🟢 In the **Contacts** section, users can start writing a message directly to the **Lukestone company** using **Messenger** and **Whatsapp** buttons.<br>
+🟢 Design inspiration from [Behance.com](https://www.behance.net/gallery/40977923/Crescent-Machinery-to-Hire-Branding-and-APP)
 
 ## Screenshot
 
@@ -148,6 +149,7 @@ Tady je pro tebe ještě pár tipů:
 🟢 Samotná stránka obsahuje spoustu fotografii, které zabírají místo - uživatel ale vždy otvírá jen jeden obrázek (vstupní) a tím se proklikne do **albumu** ve kterém prohlíží do stran další fotografie daného alba (dané realizace kamenické zakázky)<br>
 🟢 V patičce stránky jsou linky do těchto **alb** <br>
 🟢 Možnost v sekci **Kontakty** pomocí tlačítek **Messenger** a **Whatsapp** začít psát zprávu přímo na společnost **Lukestone** <br>
+🟢 Inspirace designu z [Behance.com](https://www.behance.net/gallery/40977923/Crescent-Machinery-to-Hire-Branding-and-APP)
 
 ## Screenshot
 
